@@ -15,16 +15,10 @@ export default class DatePickerExample extends Component {
         <Header />
         <Content>
           <DatePicker
-            defaultDate={new Date(2018, 4, 4)}
-            minimumDate={new Date(2018, 1, 1)}
+            minimumDate={new Date()}
             maximumDate={new Date(2018, 12, 31)}
-            locale={"en"}
-            timeZoneOffsetInMinutes={undefined}
-            modalTransparent={false}
-            animationType={"fade"}
-            androidMode={"default"}
             placeHolderText="Select date"
-            textStyle={{ color: "green" }}
+            textStyle={{ color: "red" }}
             placeHolderTextStyle={{ color: "#d3d3d3" }}
             onDateChange={this.setDate}
           />

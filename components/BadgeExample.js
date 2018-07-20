@@ -1,11 +1,16 @@
 import React, { Component } from "react";
-import { Container, Header, Content, Badge, Text, Icon } from "native-base";
+import { Container, Body, Title, Subtitle, Left, Right,  Header, Content, Badge, Text, Icon } from "native-base";
 export default class BadgeExample extends Component {
   render() {
     return (
       <Container>
         <Header>
-          <Text>Badge</Text>
+          <Left/>
+          <Body>
+            <Title>Badge</Title>
+            <Subtitle>Subtitle</Subtitle>
+          </Body>
+          <Right/>
         </Header>
         <Content>
           <Badge>
@@ -23,8 +28,8 @@ export default class BadgeExample extends Component {
           <Badge warning>
             <Text>2</Text>
           </Badge>
-          <Badge danger>
-            <Text>2</Text>
+          <Badge style={{backgroundColor: 'lightgray'}}>
+            <Text>884545453434343434348+</Text>
           </Badge>
           <Badge primary>
             <Icon
@@ -33,7 +38,7 @@ export default class BadgeExample extends Component {
             />
           </Badge>
           <Badge style={{ backgroundColor: "black" }}>
-            <Text style={{ color: "white" }}>1866</Text>
+            <Text style={{ color: "red" }}>183+</Text>
           </Badge>
         </Content>
       </Container>

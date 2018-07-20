@@ -17,20 +17,26 @@ const cards = [
   {
     text: "Card One",
     name: "One",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/tenali-raman-5cf23.appspot.com/o/Kanakkupillai%2FAdvance%20adding%20-%20Page%201.png?alt=media&token=547879a0-7f9d-4b94-94eb-c34b8be97f74"
+    image: {
+      uri:
+        "https://firebasestorage.googleapis.com/v0/b/tenali-raman-5cf23.appspot.com/o/Kanakkupillai%2FAdvance%20adding%20-%20Page%201.png?alt=media&token=547879a0-7f9d-4b94-94eb-c34b8be97f74"
+    }
   },
   {
     text: "Card Two",
     name: "Two",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/tenali-raman-5cf23.appspot.com/o/Kanakkupillai%2FVehicleTrade.png?alt=media&token=c120203e-8f1b-4d40-a1d5-e546bde0742d"
+    image: {
+      uri:
+        "https://firebasestorage.googleapis.com/v0/b/tenali-raman-5cf23.appspot.com/o/Kanakkupillai%2FVehicleTrade.png?alt=media&token=c120203e-8f1b-4d40-a1d5-e546bde0742d"
+    }
   },
   {
     text: "Card Three",
     name: "Three",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/tenali-raman-5cf23.appspot.com/o/Kanakkupillai%2FLogin.png?alt=media&token=774f2fe1-d1c7-4c21-abb1-49825b086c40"
+    image: {
+      uri:
+        "https://firebasestorage.googleapis.com/v0/b/tenali-raman-5cf23.appspot.com/o/Kanakkupillai%2FLogin.png?alt=media&token=774f2fe1-d1c7-4c21-abb1-49825b086c40"
+    }
   }
 ];
 export default class DeckSwiperExample extends Component {
@@ -42,8 +48,8 @@ export default class DeckSwiperExample extends Component {
           <DeckSwiper
             dataSource={cards}
             renderItem={item => (
-              <Card style={{ elevation: 3 }}>
-                <CardItem>
+              <Card style={{ elevation: 3, backgroundColor: 'red' }}>
+                <CardItem style={{backgroundColor: 'blue'}}>
                   <Left>
                     <Thumbnail source={item.image} />
                     <Body>
